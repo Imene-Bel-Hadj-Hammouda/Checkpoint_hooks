@@ -24,7 +24,7 @@ function App() {
       id: uuidv4(),
       title: "Undisputed III",
       description:
-        "Redemption is a 2010 American action film directed by Isaac Florentine and starring Scott Adkins, Mykel Shannon Jenkins, Mark Ivanir and Hristo Shopov.",
+        "Undisputed III:Redemption is a 2010 American action film directed by Isaac Florentine and starring Scott Adkins, Mykel Shannon Jenkins, Mark Ivanir and Hristo Shopov.",
       posterURL:
         "https://m.media-amazon.com/images/M/MV5BMTc0YzA4YjQtZGZkMi00ZmRjLWFmM2ItMDcxZTYzZGU3ZTI1XkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_.jpg",
       rate: 5,
