@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Nav_bar = (props) => {
    
     return (
+      <div className="App-header">
       <div className="Navbar">
 
         <Navbar bg="dark" variant="dark" >
@@ -24,6 +25,7 @@ const Nav_bar = (props) => {
           <Button variant="outline-info">Search</Button>
         </Form> */}
       </Navbar>
+      </div>
       </div>
             
         
