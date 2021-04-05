@@ -4,14 +4,16 @@ import ReactStars from "react-rating-stars-component";
 
 const Filter = (props) => {
   const handleChange = (event) => props.setftext(event.target.value);
-  const handleRateChange = (value) => props.setfrate(value);
+  const handleRateChange = (value) => {
+    console.log(value)
+    props.setfrate(value)};
   return (
     <div className="App">
       <label className="input">Find your favourite film</label>
       <label className="App-header">
       <input type="text" placeholder="Search for a movie..." name="Search for a movie..."  onChange={handleChange} />
 <br/>
-      <ReactStars  name="ratingRes" onStarClick={handleRateChange}/>
+      <ReactStars  name="ratingRes" onChange={handleRateChange}/>
       </label>
     </div>
   );

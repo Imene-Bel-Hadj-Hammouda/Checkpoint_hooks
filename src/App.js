@@ -59,11 +59,11 @@ function App() {
     },
     {
       id: uuidv4(),
-      title: "Screem 4",
+      title: "Scream 4",
       description:
         "or Frissons 4 inQuebeci is anAmerican horror filmdirected byWes Cravenand released in2011. This is the fourth installment in the Scream slasher franchise.",
       posterURL:
-        "https://lh3.googleusercontent.com/proxy/sWS9acTJ6VhKlGAggRpIECQ8hfe1mcCna0Q8Qn6kk2ejuzdek_ResRAtEgLtUWs5gRyYldkXmojpMRCZWv-XZYK50WomfNjI3wZlN7HMVjg_L04l4NgBq_wpZLalF6Pt",
+        "https://www.dvdfr.com/images/dvd/covers/457x640/fba779a41d8ffc456cc2c18fe3cd226b/53219/old-scream_4.0.jpg",
       rate: 4,
     },
   ]);
@@ -79,7 +79,7 @@ function App() {
         <Filter setftext={setFtext} setfrate={setFrate}/>
         <MovieList
            deleteMovie={deleteMovie} 
-          movies={movies.filter((el) => el.title.includes(ftext) && el.rate >= frate)}
+          movies={movies.filter((el) => el.title.toLowerCase().trim().includes(ftext.toLowerCase().trim()) && el.rate >= frate)}
         />
         <AddMovie addMovie={addMovie} />
       </header>
