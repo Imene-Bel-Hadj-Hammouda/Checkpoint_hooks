@@ -70,19 +70,24 @@ function App() {
   const addMovie = (newMovie) => SetMovies([...movies, newMovie]);
   const deleteMovie = (id) => SetMovies(movies.filter((el) => el.id !== id));
   return (
+    
+
     <div className="App">
-      <img src={logo} alt="logo" width= "100px" height="100px"></img>
-      <header className="App-header">
-        
+      
+       {/* <header className="App-header">  */}
+     <div className="navbar"> 
+    <img src={logo} alt="logo" width= "200px" height="90px"></img>
+    
         <Navbar/>
-        <br/>
+        </div> 
+       
         <Filter setftext={setFtext} setfrate={setFrate}/>
         <MovieList
            deleteMovie={deleteMovie} 
           movies={movies.filter((el) => el.title.toLowerCase().trim().includes(ftext.toLowerCase().trim()) && el.rate >= frate)}
         />
         <AddMovie addMovie={addMovie} />
-      </header>
+       {/* </header>  */}
     </div>
   );
 }

@@ -1,10 +1,11 @@
-import {Navbar,Nav} from 'react-bootstrap';
+import {Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Nav_bar = (props) => {
    
     return (
-      <div className="App-header">
-      <div className="Navbar">
+      
+     
+      <div >
 
         <Navbar bg="dark" variant="dark" >
         <Navbar.Brand href="#home">NetMovies</Navbar.Brand>
@@ -13,6 +14,7 @@ const Nav_bar = (props) => {
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#pricing">List</Nav.Link>
           <Nav.Link href="#pricing">LogIn</Nav.Link>
+          <Nav.Link href="#pricing">SignIn</Nav.Link>
           <Nav.Link href="#features">
          
           
@@ -20,13 +22,13 @@ const Nav_bar = (props) => {
 
          
         </Nav>
-        {/* <Form inline>
-          <FormControl type="text" placeholder="Search for a movie" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
-        </Form> */}
+        <Form inline>
+          <FormControl type="text" placeholder="Enter type of movie" className="mr-sm-2" />
+          <Button variant="outline-info">OK</Button>
+        </Form>
       </Navbar>
       </div>
-      </div>
+      
             
         
      )
@@ -34,3 +36,4 @@ const Nav_bar = (props) => {
  };
 
  export default Nav_bar
+ 
