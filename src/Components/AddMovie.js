@@ -27,8 +27,8 @@ const AddMovie = ({addMovie}) => {
   }
     return (
       <div>
-        <Button variant="primary" onClick={handleShow} style={{marginBottom: 20}}>
-          +
+        <Button variant="danger" onClick={handleShow} style={{marginBottom: 20}}>
+          AddMovie
         </Button>
         <Modal show={show} onHide={handleShow}>
           <Modal.Header closeButton>

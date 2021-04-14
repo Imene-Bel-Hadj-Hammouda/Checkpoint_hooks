@@ -75,11 +75,11 @@ function App() {
     <div className="App">
       
        {/* <header className="App-header">  */}
-     <div className="navbar"> 
-    <img src={logo} alt="logo" width= "200px" height="90px"></img>
     
-        <Navbar/>
-        </div> 
+    {/* <img src={logo} alt="logo" width= "200px" height="90px"></img> */}
+    
+        <Navbar className="col"/>
+        
        
         <Filter setftext={setFtext} setfrate={setFrate}/>
         <MovieList
